@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+        .h21 {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Volver</a>
+    </nav>
+    <h1>Ejercicio 2</h1>
+
+    <h2 class="h21">Uso de los elementos &lt;map&gt; y &lt;area&gt; en HTML</h2>
+
+    <section>
+        <h2>Elemento &lt;map&gt;</h2>
+        <p>
+            El elemento <code>&lt;map&gt;</code> se utiliza para crear un mapa de imagen que contiene uno o más elementos <code>&lt;area&gt;</code>.
+        </p>
+        <p>
+            Debe tener un atributo <code>name</code> que se relaciona con el atributo <code>usemap</code> de una etiqueta <code>&lt;img&gt;</code>. Esto permite que la imagen se asocie con el mapa.
+        </p>
+        <h3>Ejemplo de uso:</h3>
+        <pre><code>
+&lt;map name="nombreMapa"&gt;
+    &lt;area shape="rect" coords="0,0,50,50" href="link1.html" alt="link 1"&gt;
+    &lt;area shape="circle" coords="100,100,30" href="link2.html" alt="link 2"&gt;
+&lt;/map&gt;
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Elemento &lt;area&gt;</h2>
+        <p>
+            El elemento <code>&lt;area&gt;</code> se utiliza para definir áreas específicas dentro de un mapa de imagen que son clicables y pueden redirigir a diferentes enlaces.
+        </p>
+        <p>
+            Atributos importantes:
+            <ul>
+                <li><code>shape</code>: Define la forma del área (rectángulo, círculo o polígono).</li>
+                <li><code>coords</code>: Especifica las coordenadas que definen la forma del área.</li>
+                <li><code>href</code>: Indica la URL a la que se redirige al hacer clic en el área.</li>
+                <li><code>alt</code>: Proporciona un texto alternativo para mejorar la accesibilidad.</li>
+            </ul>
+        </p>
+        <h3>Ejemplo de uso:</h3>
+        <pre><code>
+&lt;area shape="rect" coords="10,10,50,50" href="link1.html" alt="link 1"&gt;
+&lt;area shape="circle" coords="100,100,30" href="link2.html" alt="link 2"&gt;
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Asociación entre &lt;img&gt; y &lt;map&gt;</h2>
+        <p>
+            Para asociar una imagen con un mapa, se utiliza el atributo <code>usemap</code> en la etiqueta <code>&lt;img&gt;</code>. Aquí hay un ejemplo completo:
+        </p>
+        <pre><code>
+&lt;img src="imagen.jpg" usemap="#nombreMapa" alt="Descripción de la imagen"&gt;
+&lt;map name="nombreMapa"&gt;
+    &lt;area shape="rect" coords="0,0,50,50" href="link1.html" alt="link 1"&gt;
+    &lt;area shape="circle" coords="100,100,30" href="link2.html" alt="link 2"&gt;
+&lt;/map&gt;
+        </code></pre>
+    </section>
+
+</body>
+</html>
