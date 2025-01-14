@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de Ejemplo</title>
+    <style>
+        /* Estilos opcionales para el tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Posición del tooltip */
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Madrid la capital de España</h1> 
+    <hr> <!-- Línea horizontal -->
+    
+    <p>
+        En este documento aprenderás sobre HTML, CSS y JavaScript. 
+        <span class="tooltip">Aprendiendo lenguajes de marcas
+            <span class="tooltiptext">Aprendiendo lenguajes de marcas</span>
+        </span>
+    </p>
+
+</body>
+</html>

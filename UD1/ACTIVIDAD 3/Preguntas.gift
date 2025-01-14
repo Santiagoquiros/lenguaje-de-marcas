@@ -1,0 +1,44 @@
+::Pregunta 1::
+¿Qué es un lenguaje de marcas?
+{
+    ~A) Un lenguaje de programación.
+    =B) Un sistema para estructurar y presentar datos.
+    ~C) Un formato de archivo de imagen.
+    ~D) Un tipo de base de datos.
+}
+
+::Pregunta 2::
+¿Cuál de los siguientes es un ejemplo de un lenguaje de marcas?
+{
+    ~A) Python
+    =B) HTML
+    ~C) Java
+    ~D) C++
+}
+
+::Pregunta 3::
+¿Qué elemento se utiliza en HTML para definir un encabezado?
+{
+    ~A) <title>
+    ~B) <header>
+    =C) <h1>
+    ~D) <heading>
+}
+
+::Pregunta 4::
+¿Qué atributo se utiliza comúnmente en etiquetas HTML para especificar un enlace?
+{
+    ~A) src
+    ~B) link
+    =C) href
+    ~D) url
+}
+
+::Pregunta 5::
+¿Cuál es la función principal de XML?
+{
+    ~A) Mostrar contenido en un navegador.
+    =B) Almacenar y transportar datos.
+    ~C) Estilizar páginas web.
+    ~D) Ejecutar código en un servidor.
+}

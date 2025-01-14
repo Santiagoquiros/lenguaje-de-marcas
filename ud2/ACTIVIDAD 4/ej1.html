@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Volver</a>
+    </nav>
+    <h1>Ejercicio 1</h1>
+    <h3>Atributos del Elemento &lt;area&gt;</h3>
+    <p>El elemento <code>&lt;area&gt;</code> se utiliza dentro de un elemento <code>&lt;map&gt;</code> para definir áreas activas en una imagen. A continuación se presentan los atributos admitidos:</p>
+    
+    <ul>
+        <li>
+            <strong>alt</strong>: 
+            <p>Texto alternativo que describe el área. Se muestra si la imagen no se puede cargar.</p>
+        </li>
+        <li>
+            <strong>coords</strong>: 
+            <p>Coordenadas que definen la forma del área activa. El formato depende del valor de <code>shape</code>.</p>
+        </li>
+        <li>
+            <strong>href</strong>: 
+            <p>URL a la que se enlaza el área activa.</p>
+        </li>
+        <li>
+            <strong>shape</strong>: 
+            <p>Define la forma del área activa. Puede ser <code>rect</code> (rectángulo), <code>circle</code> (círculo) o <code>poly</code> (polígono).</p>
+        </li>
+        <li>
+            <strong>target</strong>: 
+            <p>Especifica dónde abrir el enlace (por ejemplo, en una nueva pestaña).</p>
+        </li>
+        <li>
+            <strong>title</strong>: 
+            <p>Texto que aparece como un tooltip cuando se pasa el ratón sobre el área.</p>
+        </li>
+        <li>
+            <strong>download</strong>: 
+            <p>Indica que el enlace es para descargar un recurso.</p>
+        </li>
+        <li>
+            <strong>media</strong>: 
+            <p>Especifica una consulta de medios para el enlace.</p>
+        </li>
+        <li>
+            <strong>rel</strong>: 
+            <p>Define la relación entre el documento actual y el recurso vinculado.</p>
+        </li>
+    </ul>
+
+    <h2>Ejemplo de uso</h2>
+    <pre>
+        <code>
+&lt;area 
+    alt="Texto alternativo para el área" 
+    coords="x1,y1,x2,y2" 
+    href="https://www.ejemplo.com" 
+    shape="rect|circle|poly" 
+    target="_blank|_self|_parent|_top" 
+    title="Título del área" 
+    download 
+    media="media-query" 
+    rel="noopener noreferrer"&gt;
+        </code>
+    </pre>
+</body>
+</html>
