@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Recetas de la Abuela</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Las Recetas de la Abuela</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Página Principal</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#sobre">Sobre la Abuela</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recetas">
+            <h2>Recetas</h2>
+            <div class="receta">
+                <h3 class="titulo-receta">Galletas de Mantequilla</h3>
+                <div class="contenido-receta">
+                    <p><strong>Ingredientes:</strong> 250g de harina, 125g de azúcar, 150g de mantequilla, 1 huevo, 1 cucharadita de vainilla.</p>
+                    <p><strong>Instrucciones:</strong> Mezcla la mantequilla con el azúcar hasta obtener una crema. Añade el huevo y la vainilla, luego la harina tamizada. Forma una masa, enfría por 30 minutos en la nevera. Estira la masa y corta en formas. Hornea a 180°C por 12-15 minutos hasta dorar.</p>
+                </div>
+            </div>
+
+            <div class="receta">
+                <h3 class="titulo-receta">Sopa Casera de Pollo</h3>
+                <div class="contenido-receta">
+                    <p><strong>Ingredientes:</strong> 1 pechuga de pollo, 2 zanahorias, 1 cebolla, 1 rama de apio, 100g de fideos, sal y pimienta al gusto.</p>
+                    <p><strong>Instrucciones:</strong> Cocina el pollo en 1 litro de agua con las zanahorias, cebolla y apio durante 30 minutos. Retira el pollo, desmenúzalo y vuelve a añadirlo a la sopa. Agrega los fideos y cocina por 10 minutos más. Ajusta la sazón y sirve caliente.</p>
+                </div>
+            </div>
+
+            <div class="receta">
+                <h3 class="titulo-receta">Tortilla Española Tradicional</h3>
+                <div class="contenido-receta">
+                    <p><strong>Ingredientes:</strong> 4 patatas medianas, 1 cebolla, 4 huevos, aceite de oliva, sal al gusto.</p>
+                    <p><strong>Instrucciones:</strong> Pela y corta las patatas en rodajas finas. Fríelas en abundante aceite junto con la cebolla hasta que estén tiernas. Escurre el exceso de aceite y mezcla con los huevos batidos y sal. Vierte en una sartén caliente y cocina a fuego lento hasta que esté dorada por ambos lados. Sirve caliente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre la Abuela</h2>
+            <p>La abuela siempre ha sido una gran cocinera, transmitiendo sus recetas de generación en generación. Aquí compartimos algunas de sus recetas favoritas.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas compartir tus propias recetas o tienes preguntas, puedes contactarnos a través del correo electrónico: <a href="mailto:Santiquiros@recetasdeabuela.com">Santiquiros@recetasdeabuela.com</a>.</p>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensajeConfirmacion" style="display:none; color: green;">¡Mensaje enviado con éxito!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Las Recetas de la Abuela. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

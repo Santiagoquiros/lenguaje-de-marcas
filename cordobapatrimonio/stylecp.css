@@ -1,0 +1,127 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado en toda la pantalla */
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    
+    /* Animación de entrada */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación del encabezado */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menú de navegación en horizontal */
+nav {
+    width: 100%;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efecto hover en los enlaces */
+nav a:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Contenido principal centrado */
+main {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Animación de entrada */
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* Animación de entrada para el contenido */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajuste de la sección principal */
+section {
+    width: 70%;
+}
+
+/* Estilos de la barra lateral */
+aside {
+    width: 25%;
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section, aside {
+        width: 100%;
+    }
+}

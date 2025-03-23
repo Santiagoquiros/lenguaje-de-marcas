@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Córdoba ciudad Patrimonio">
+    <meta name="keywords" content="Turismo, patrimonio, viajes">
+    <title>Córdoba Ciudad Patrimonio</title>
+    <link rel="stylesheet" href="stylecp.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>Córdoba Ciudad Patrimonio</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <a href="CordobaPatrimonio.html">Córdoba Patrimonio</a>
+            <a href="mezquita.html">La Mezquita</a>
+            <a href="casco_historico.html">Casco Histórico</a>
+            <a href="patios.html">Los Patios</a>
+            <a href="medina_azahara.html">Medina Azahara</a>  
+            <a href="recorrido.html">Recorrido</a>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contacto</h2>
+        <section>
+            <article>
+                <p>Si deseas más información sobre la ciudad de Córdoba y su patrimonio, puedes ponerte en contacto con nosotros mediante el siguiente formulario.</p>
+                
+                <form action="enviar_formulario.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <a href="#top"><img src="imagenes/flecha-arriba.png" alt="Subir al inicio" width="48"></a>
+
+    <footer> 
+        <address>Córdoba, España</address>
+        <small>&copy; 2024 Todos los derechos reservados.</small>  
+    </footer>
+</body>
+</html>
