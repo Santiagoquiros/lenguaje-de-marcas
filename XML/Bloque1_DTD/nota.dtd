@@ -1,5 +1,5 @@
-<!ELEMENT note (to,from,heading,body)> <!--Está formado por estos elementos-->
-    <!ELEMENT to (#PCDATA)> <!--Texto-->
-    <!ELEMENT from (#PCDATA)> <!--Texto-->
-    <!ELEMENT heading (#PCDATA)> <!--Texto-->
-    <!ELEMENT body (#PCDATA)> <!--Texto-->
+<!ELEMENT note (to,from,heading,body)> 
+    <!ELEMENT to (#PCDATA)> 
+    <!ELEMENT from (#PCDATA)> 
+    <!ELEMENT heading (#PCDATA)> 
+    <!ELEMENT body (#PCDATA)> 
