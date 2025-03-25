@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 2</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+            grid-template-rows:50px 1fr 50px ;
+            grid-template-columns: 20% 1fr 15%;
+            grid-gap: 5px;
+            height: 100vh;
+            margin: 0;
+        }
+        header, footer, article, nav, div{
+            padding: 15px;
+            background-color: green;
+        }
+        #header{
+            grid-area: header;
+        }
+        #article {
+            grid-area: article;
+        }
+        #nav {
+            grid-area: nav;
+        }
+        #aside{
+            grid-area: ads;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header id="header">header</header>
+    <article id="article">Article</article>
+    <nav id="nav">Nav</nav>
+    <div id="Asaide">Aside</div>
+    <footer id="footer">Footer</footer>
+</body>
+</html>

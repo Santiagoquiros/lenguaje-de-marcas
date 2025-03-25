@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-image: url('https://via.placeholder.com/600x400'); /* Imagen base */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.image.not-blended {
+    background-color: rgba(0, 0, 0, 0.2); /* Sin mezcla */
+    background-blend-mode: normal;
+}
+
+.image.blended {
+    background-color: rgba(255, 0, 0, 0.5); /* Mezcla con rojo */
+    background-blend-mode: multiply; /* Otras opciones: screen, overlay, etc. */
+}
+
+p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+.index {
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+    </style>
+</head>
+<body>
+    <a class="index" href="./index.html">volver</a>
+
+    <div class="container">
+        <div class="image-box">
+            <div class="image not-blended">
+                <p>Not Blended</p>
+            </div>
+            <div class="image blended">
+                <p>Blended</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
